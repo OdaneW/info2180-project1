@@ -1,11 +1,191 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 }
 
 .container {
+    display: grid;    
+    grid-template-rows: auto;
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+/*Header and navigation*/
+header{
+    font-size: 18px;
+    background-color:white;    
+}
+a{
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 700;
+}
+a:hover{
+    color: #5A67D8;
+}
+header .container{
+    display: flex;
+    flex-direction: row;    
+}
+header .container img{
+    flex: 1;
+}
+header .container nav {    
+    flex: 2;
+    padding-top: 20px;    
+}
+nav{
+    text-align: right;
+}
+ul li{    
+    display:inline;    
+    list-style: none;
+    padding: 10px;    
+}
+
+/*Overview section*/
+.overview-hero .container{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    align-items: center;   
+}
+.overview-hero-text{
+    padding: 80px;
+}
+.overview-hero{
+    background-color: #E2E8F0;
+}
+.overview-hero img{
+    float:inline-start; 
+    border-radius: 20px;   
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Learn about section*/
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+.learn-about h3{
+    font-size: 21px;
+    color: #48BB78;
+}
+.learn-about{
+    align-items: center;
+}
+.learn-about .container .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;       
+}
+.card{    
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;    
+    border-color: #E2E8F0;
+    box-shadow: 0px 4px 5px 0px #b3b3b3;    
+    margin: 10px;    
+}
+.card-body{
+    padding: 15px;
+}
+.learn-about img{
+    width: 300px;
+    height: 300px;       
+}
+
+/*Covid Testing section*/
+.testing-desciption , .testing-desciption h3{
+    color: white;
+}
+.testing{    
+    background-color: #4A5568;
+    padding: 100px;
+    margin-top: 20px;    
+}
+.cta .btn{
+    padding-inline: 25px;
+    padding-block: 15px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #48BB78;
+    border-radius: 5px;
+}
+.testing .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+/*Stories section*/
+.stories img{
+    float: left;
+    border-radius: 150px;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;    
+}
+.stories .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.stories h2, .stories a{
+    color: #5A67D8;
+}
+
+.article-body h3{
+    font-size: 18px;
+}
+.article-body{
+    margin-bottom: 50px;
+}
+
+/*Newsletter Section*/
+.newsletter{
+    background-color: #48BB78;    
+}
+.newsletter .container{
+    padding: 100px;    
+    color: white;    
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 500px;   
+    justify-items: center;
+    justify-content: center;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+button{
+    border-style: none;
+    border-radius: 5px;
+    background-color: #5A67D8;
+    font-size: 18px;
+    color: white;
+    width: 180px;
+    height: 60px;
+    margin-left: 5px;
+}
+input{
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 5px;
+}
+
+/*Footer Section*/
+footer{
+    background-color: #4A5568;
+    color: white;
+    padding: 25px;
 }
